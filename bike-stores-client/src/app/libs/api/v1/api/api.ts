@@ -1,0 +1,17 @@
+export * from './brands.service';
+import { BrandsService } from './brands.service';
+export * from './categories.service';
+import { CategoriesService } from './categories.service';
+export * from './customers.service';
+import { CustomersService } from './customers.service';
+export * from './orders.service';
+import { OrdersService } from './orders.service';
+export * from './products.service';
+import { ProductsService } from './products.service';
+export * from './staff.service';
+import { StaffService } from './staff.service';
+export * from './stock.service';
+import { StockService } from './stock.service';
+export * from './stores.service';
+import { StoresService } from './stores.service';
+export const APIS = [BrandsService, CategoriesService, CustomersService, OrdersService, ProductsService, StaffService, StockService, StoresService];
