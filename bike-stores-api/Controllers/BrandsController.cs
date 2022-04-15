@@ -82,20 +82,20 @@ namespace bike_stores_api.Controllers
         }
 
         //DELETE: api/Brands/5
-         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBrand(int id)
-        {
-            var brand = await _context.Brands.FindAsync(id);
-            if (brand == null)
-            {
-                return NotFound();
-            }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteBrand(int id)
+        //{
+        //  var brand = await _context.Brands.FindAsync(id);
+        //  if (brand == null)
+        //  {
+        //      return NotFound();
+        //  }
 
-            _context.Brands.Remove(brand);
-            await _context.SaveChangesAsync();
+        //  _context.Brands.Remove(brand);
+        //  await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+        //  return NoContent();
+        //}
 
         private bool BrandExists(int id)
         {
